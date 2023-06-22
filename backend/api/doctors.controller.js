@@ -4,7 +4,7 @@ export default class DoctorsController {
     static async apiGetDoctors(req, res, next) {
         const doctorsPerPage = req.query.doctorsPerPage ? parseInt(req.query.doctorsPerPage, 10) : 20
         const page = req.query.page ? parseInt(req.query.page, 10) : 0
-
+      
         let filters = {}
         if (req.query.city) {
             filters.city = req.query.city

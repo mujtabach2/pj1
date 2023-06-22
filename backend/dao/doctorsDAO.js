@@ -63,7 +63,7 @@ export default class DoctorsDAO {
     } catch (e) {
       console.error(`Something went wrong in getDoctorByID: ${e}`);
       throw e;
-    }
+    } 
   }
 
   static async getDoctorByCity(city) {
